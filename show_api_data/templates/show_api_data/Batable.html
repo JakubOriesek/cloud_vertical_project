@@ -1,0 +1,34 @@
+
+{% extends "show_api_data/base.html" %}
+{% block content %}
+<h1> api response:</h1>
+<h2> {{cas}}</h2>
+<pre>
+
+</pre>
+<table class = "table table-stripped">
+    <thead>
+    <tr>
+        <th>Čas merania</th>
+        <th>teplota[°C]</th>
+        <th>tlak[Pa]</th>
+        <th>vietor</th>
+        <th>o3</th>
+        <th>vlhkost</th>
+        <th>pocet update</th>
+        
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>{{ cas }}</td>
+        <td>{{ teplota }}</td>
+        <td>{{ tlak }}</td>
+        <td>{{ vietor }}</td>
+        <td>{{ o3 }} </td>
+        <td>{{ vlhkost }}</td>
+        <td>{{ pocet_update }}</td>
+    </tr>
+</tbody>
+</table>
+{% endblock %}
